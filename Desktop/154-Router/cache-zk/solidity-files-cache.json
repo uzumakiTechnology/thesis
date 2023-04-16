@@ -1,0 +1,1448 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/SobajaswapV1Migrator.sol": {
+      "lastModificationDate": 1681541418184,
+      "contentHash": "abe3d9d9371238516be5c5282f96be13",
+      "sourceName": "contracts/SobajaswapV1Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/ISobajaswapV1Migrator.sol",
+        "./interfaces/V1/ISobajaswapFactory.sol",
+        "./interfaces/V1/ISobajaswapExchange.sol",
+        "./interfaces/ISobajaswapV1Router01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SobajaswapV1Migrator"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/ISobajaswapV1Migrator.sol": {
+      "lastModificationDate": 1681541400444,
+      "contentHash": "9c1a7a343f1c8d500b5288fa9292a83b",
+      "sourceName": "contracts/interfaces/ISobajaswapV1Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Migrator"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/V1/ISobajaswapFactory.sol": {
+      "lastModificationDate": 1681541400471,
+      "contentHash": "7dc1b22f4dddc75b5be6a1cb508a827e",
+      "sourceName": "contracts/interfaces/V1/ISobajaswapFactory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapFactory"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/V1/ISobajaswapExchange.sol": {
+      "lastModificationDate": 1681541400465,
+      "contentHash": "5a60f962906c3a40724a54fa7aff756d",
+      "sourceName": "contracts/interfaces/V1/ISobajaswapExchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapExchange"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/ISobajaswapV1Router01.sol": {
+      "lastModificationDate": 1681541400449,
+      "contentHash": "d55de0a48af6b3d578eb7732f724dfe2",
+      "sourceName": "contracts/interfaces/ISobajaswapV1Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Router01"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1681541400430,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/lib/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1681542134022,
+      "contentHash": "7fad4038612c5f040ebd746a3e58e0db",
+      "sourceName": "@sobajaswap/lib/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/examples/ExampleSwapToPrice.sol": {
+      "lastModificationDate": 1681541400498,
+      "contentHash": "04b92de40d4e284b5369aff8ae2a0ba6",
+      "sourceName": "contracts/examples/ExampleSwapToPrice.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "@sobajaswap/lib/contracts/libraries/Babylonian.sol",
+        "@sobajaswap/lib/contracts/libraries/TransferHelper.sol",
+        "../libraries/SobajaswapV1LiquidityMathLibrary.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/ISobajaswapV1Router01.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/SobajaswapV1Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSwapToPrice"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/libraries/SobajaswapV1LiquidityMathLibrary.sol": {
+      "lastModificationDate": 1681541400523,
+      "contentHash": "90064faaea3894a90ff87bf5683e4280",
+      "sourceName": "contracts/libraries/SobajaswapV1LiquidityMathLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+        "@sobajaswap/lib/contracts/libraries/Babylonian.sol",
+        "@sobajaswap/lib/contracts/libraries/FullMath.sol",
+        "./SafeMath.sol",
+        "./SobajaswapV1Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SobajaswapV1LiquidityMathLibrary"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1681541400511,
+      "contentHash": "1ee314437f325857154baa8013d1fb7d",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/libraries/SobajaswapV1Library.sol": {
+      "lastModificationDate": 1681541547521,
+      "contentHash": "f756adbfda1143955a5b65c05f9b12dc",
+      "sourceName": "contracts/libraries/SobajaswapV1Library.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SobajaswapV1Library"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol": {
+      "lastModificationDate": 1681542192566,
+      "contentHash": "e3f84db785c39e95f67d196c2789fb4c",
+      "sourceName": "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Pair"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/lib/contracts/libraries/Babylonian.sol": {
+      "lastModificationDate": 1681542133933,
+      "contentHash": "3f7a9d2b13eebc20350a1cc42ed09b16",
+      "sourceName": "@sobajaswap/lib/contracts/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol": {
+      "lastModificationDate": 1681542192573,
+      "contentHash": "55a6a8ba9e81fd0fac306f7dffab4b2f",
+      "sourceName": "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Factory"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/lib/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1681542133961,
+      "contentHash": "23bbd047cedfd8027fb139fcab949cc0",
+      "sourceName": "@sobajaswap/lib/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/lib/contracts/libraries/FixedPoint.sol": {
+      "lastModificationDate": 1681542133943,
+      "contentHash": "9c78b75695500ec38a85fea7d923fbf0",
+      "sourceName": "@sobajaswap/lib/contracts/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./Babylonian.sol",
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/lib/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1681542133953,
+      "contentHash": "9268c1120c875c017e31caad9aa38921",
+      "sourceName": "@sobajaswap/lib/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/libraries/SobajaswapV1OracleLibrary.sol": {
+      "lastModificationDate": 1681541400530,
+      "contentHash": "4d00d84a49588db918a2f689500e5ac7",
+      "sourceName": "contracts/libraries/SobajaswapV1OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "@sobajaswap/lib/contracts/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SobajaswapV1OracleLibrary"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/examples/ExampleSlidingWindowOracle.sol": {
+      "lastModificationDate": 1681541400494,
+      "contentHash": "feaa846d3d2a9d041e3a0209794bef2d",
+      "sourceName": "contracts/examples/ExampleSlidingWindowOracle.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "@sobajaswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/SobajaswapV1Library.sol",
+        "../libraries/SobajaswapV1OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSlidingWindowOracle"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/examples/ExampleOracleSimple.sol": {
+      "lastModificationDate": 1681541400489,
+      "contentHash": "41bbc066339a882a4b579d9b9048ee00",
+      "sourceName": "contracts/examples/ExampleOracleSimple.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Pair.sol",
+        "@sobajaswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SobajaswapV1OracleLibrary.sol",
+        "../libraries/SobajaswapV1Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleOracleSimple"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1681541400548,
+      "contentHash": "3c84c6f456884e55b360a8450d0f0446",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/test/DeflatingERC20.sol": {
+      "lastModificationDate": 1681541400542,
+      "contentHash": "7476ba791f9afb6f870f10560972e0a0",
+      "sourceName": "contracts/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/SobajaswapV1Router02.sol": {
+      "lastModificationDate": 1681541418291,
+      "contentHash": "041505a5e6d96eefd4a9ee2d3699e1b3",
+      "sourceName": "contracts/SobajaswapV1Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+        "@sobajaswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/ISobajaswapV1Router02.sol",
+        "./libraries/SobajaswapV1Library.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SobajaswapV1Router02"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/ISobajaswapV1Router02.sol": {
+      "lastModificationDate": 1681541400453,
+      "contentHash": "f74a882d2efe5fe060bc555916a6a2cb",
+      "sourceName": "contracts/interfaces/ISobajaswapV1Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./ISobajaswapV1Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Router02"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1681541400458,
+      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/examples/ExampleFlashSwap.sol": {
+      "lastModificationDate": 1681541400485,
+      "contentHash": "b5f99f08c3537bf5ed3596dd84340c95",
+      "sourceName": "contracts/examples/ExampleFlashSwap.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Callee.sol",
+        "../libraries/SobajaswapV1Library.sol",
+        "../interfaces/V1/ISobajaswapFactory.sol",
+        "../interfaces/V1/ISobajaswapExchange.sol",
+        "../interfaces/ISobajaswapV1Router01.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleFlashSwap"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/node_modules/@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Callee.sol": {
+      "lastModificationDate": 1681542192550,
+      "contentHash": "ec04b26f521e4f527a4606f6a2855ed2",
+      "sourceName": "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISobajaswapV1Callee"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/SobajaswapV1Router01.sol": {
+      "lastModificationDate": 1681541418234,
+      "contentHash": "7bbcdbe4808ebd81f2357fdf53d08ec5",
+      "sourceName": "contracts/SobajaswapV1Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "@sobajaswap/v2-core/contracts/interfaces/ISobajaswapV1Factory.sol",
+        "@sobajaswap/lib/contracts/libraries/TransferHelper.sol",
+        "./libraries/SobajaswapV1Library.sol",
+        "./interfaces/ISobajaswapV1Router01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SobajaswapV1Router01"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/test/RouterEventEmitter.sol": {
+      "lastModificationDate": 1681541400556,
+      "contentHash": "7a1c5c396a596f64accec4d346720a05",
+      "sourceName": "contracts/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ISobajaswapV1Router01.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/examples/ExampleComputeLiquidityValue.sol": {
+      "lastModificationDate": 1681541400477,
+      "contentHash": "5ce81f6ce2dc8bc693dd3c3d6b6ec30d",
+      "sourceName": "contracts/examples/ExampleComputeLiquidityValue.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SobajaswapV1LiquidityMathLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleComputeLiquidityValue"
+      ]
+    },
+    "/Users/anhtuan1312/Desktop/154-Router/contracts/test/WETH9.sol": {
+      "lastModificationDate": 1681541400561,
+      "contentHash": "c60afbcd54ec9da3b3908e2db56c0d12",
+      "sourceName": "contracts/test/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.5",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    }
+  }
+}
