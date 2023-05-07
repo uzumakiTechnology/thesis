@@ -1,0 +1,1 @@
+All files in this folder contain logic about normal function in order to interact with smart contract and UI functionality
